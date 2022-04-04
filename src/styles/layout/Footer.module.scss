@@ -1,0 +1,76 @@
+.footerContainer {
+    width: 100%;
+    background-color: rgb(0 28 78);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    .footerReserveContainer {
+        width: 100%;
+        position: relative;
+        margin: 10px auto 0px;
+        border-top-right-radius: 16px;
+        border-top-left-radius: 16px;
+        background-color: rgb(112 189 172);
+        padding: 10px 0px 0px 0px;
+        .whatsContent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 10px 8px;
+        }
+        .whatsText {
+            color: #fff;
+            font-weight: 500;
+            font-size: 25px;
+            margin: 5px 0px;
+            width: calc(100% - 160px);
+        }
+        .whatsBtn {
+            background-color: rgb(22 52 119);
+            color: #fff;
+            outline: none;
+            border: none;
+            height: 45px;
+            min-width: 150px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            border-radius: 8px;
+            margin: 5px 0px;
+            transition: all ease 500ms;
+            cursor: pointer;
+            &:hover {
+                background-color: #fff;
+                color: rgb(22 52 119);
+                transition: all ease 500ms;
+            }
+        }
+    }
+
+    .footerContent {
+        padding: 20px 0px;
+        color: #fff;
+        .personalInfo {
+            display: flex;
+            flex-direction: column;
+            .infoAddress {
+                font-weight: 300;
+                text-align: center;
+            }
+            .infoTel {
+                font-weight: 300;
+                text-align: center;
+            }
+            .infoCopy {
+                margin: 25px 0 0;
+                font-weight: 300;
+                text-align: center;
+            }
+            .infoLogo {
+                width: 40px;
+                height: 40px;
+                margin: 0px auto 25px;
+            }
+        }
+    }
+}

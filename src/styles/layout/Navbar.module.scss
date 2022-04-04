@@ -1,0 +1,175 @@
+@media screen and (min-width: 680px) {
+    .desktop {
+        display: flex !important;
+        visibility: visible !important;
+    }
+    .mobile {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .navBarContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 16px;
+        justify-content: space-between;
+        min-height: 105px;
+        max-height: 110px;
+        .navBarContent {
+            justify-content: space-between;
+            position: sticky;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+        }
+        .navBarLogo {
+            width: 100px;
+            height: 60px;
+            align-items: center;
+            justify-content: flex-start;
+            display: flex;
+            flex-direction: row;
+            padding: 5px;
+            border-radius: 100%;
+            cursor: pointer;
+        }
+        .navBarItem {
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: ease all 500ms;
+            height: 100%;
+            display: inline-block;
+            position: relative;
+            font-size: 20px;
+            font-weight: 300;
+            &:hover {
+                .navBarItemLine {
+                    transition: ease all 500ms;
+                    width: 100%;
+                }
+            }
+        }
+        .navBarItemLine {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            height: 3px;
+            background-color: rgb(22 52 119);
+            border-radius: 12px;
+            width: 0%;
+            transition: ease all 500ms;
+        }
+        .navBarLogin {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            color: #555;
+            min-width: 70px;
+            font-weight: 300;
+        }
+    }
+
+    .colorDegree {
+        color: #555;
+    }
+}
+
+@media screen and (max-width: 681px) {
+    .desktop {
+        display: none !important;
+        visibility: hidden !important;
+    }
+    .navBarContainer {
+        width: "100%";
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 16px;
+        justify-content: space-between;
+        min-height: 105px;
+        max-height: 110px;
+    }
+    .navBarContent {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .navBarLogo {
+        width: 100px;
+        height: 60px;
+        align-items: center;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+        border-radius: 100%;
+        cursor: pointer;
+    }
+    .navBarItemList {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        height: 100%;
+        z-index: 1000;
+        width: calc(100%);
+        background-color: #000000bb;
+        .navBarLogo {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            align-self: center;
+            background-color: #fff;
+            border-radius: 0px;
+            width: 100%;
+        }
+        .navBarItem {
+            background-color: #fff;
+            text-align: center;
+            width: 100%;
+            padding: 15px;
+            border-bottom: 1px solid #bbb;
+        }
+        .navBarLogin {
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            padding: 20px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            box-shadow: -1px 24px 45px -5px #96a5a22b;
+            background-color: #fff;
+            flex-direction: row;
+            font-size: 18px;
+            font-weight: 500;
+            :first-child {
+                margin-right: 5px;
+            }
+        }
+    }
+    .navBarItemListShow {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+        visibility: visible;
+
+        transition: all 1000ms ease;
+    }
+    .navBarItemListHide {
+        top: 100%;
+        left: 0px;
+        opacity: 0;
+        transition: all 800ms ease;
+        visibility: hidden;
+
+    }
+    .navBarItemListLogo {
+    }
+    .colorDegree {
+        color: #555;
+    }
+}

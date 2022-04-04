@@ -1,0 +1,316 @@
+.heroContainer {
+    margin: 0;
+    position: relative;
+    z-index: -1;
+    .containerBig {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        .heroSectionWrap {
+            overflow: hidden;
+            position: relative;
+            padding: 36.4583% 0 0;
+            .heroBackground {
+                background-image: url("/images/home1.webp");
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                z-index: 1;
+                background-position: 50% 50%;
+                -webkit-background-size: cover;
+                background-size: cover;
+                padding: 36.4583% 0 0;
+            }
+            .heroCustomText {
+                text-align: center;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                z-index: 10;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                .heroCustomCaption {
+                    max-width: 61%;
+                    padding: 0;
+                    margin-top: -40px;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 100%;
+                    margin-right: 0 auto;
+                    margin-left: 0 auto;
+                    color: #f8d549;
+                    h4 {
+                        p {
+                            font-size: 120px;
+                            margin: 8px 0;
+                            line-height: 0.5em;
+                            letter-spacing: 0em;
+                            width: 100%;
+                            font-weight: 800;
+                            color: #f8d549;
+                            position: relative;
+                            em {
+                                line-height: 1.1em;
+                                letter-spacing: 0em;
+                                color: #f8d549;
+                                font-style: normal;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                transform: translate(103%, -39%);
+                                font-size: 60px;
+                            }
+                            strong {
+                                font-size: 40px;
+                                text-transform: uppercase;
+                                line-height: 1.1em;
+                                letter-spacing: 0;
+                                color: #f8d549;
+                                position: absolute;
+                                right: 0;
+                                bottom: 0;
+                                transform: translate(106%, 39%);
+                            }
+                        }
+                    }
+                    h5 {
+                        width: fit-content;
+                        color: #fff;
+                        font-size: 35px;
+                        margin: 0.65rem 0;
+                    }
+                    p {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin: 8px 0;
+                        color: #fff;
+                        width: 33%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.heroContainerOptions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+    z-index: 1;
+    max-height: 100px;
+    .heroOptions {
+        background: white;
+        max-height: 100px;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        padding: 25px 3%;
+        overflow: hidden;
+        max-width: 90%;
+        margin: 0 auto;
+        width: 100%;
+        -webkit-box-shadow: -1px 24px 45px -5px rgb(150 165 162 / 17%);
+        -moz-box-shadow: -1px 24px 45px -5px rgba(150, 165, 162, 0.17);
+        box-shadow: -1px 24px 45px -5px #96a5a22b;
+
+        .heroOption {
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-right: 30px;
+            padding-left: 30px;
+
+            .heroOptionImg {
+                width: 60px;
+                height: 50px;
+                margin-right: 10px;
+            }
+            .heroOptionText {
+                width: auto;
+                color: #7c7e7e;
+                font-size: 12px;
+                font-weight: 400;
+                :nth-child(1) {
+                    color: #000;
+                    font-size: 16px;
+                }
+                p {
+                    margin: 0;
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 950px) {
+    .heroCustomCaption {
+        z-index: -1;
+        max-width: 70% !important;
+        h4 {
+            margin: 0;
+            p {
+                font-size: 90px !important;
+                em {
+                    font-size: 50px !important;
+                }
+                strong {
+                    font-size: 30px !important;
+                }
+            }
+        }
+        :nth-child(2) {
+            font-size: 30px !important;
+        }
+        :nth-child(3) {
+        }
+    }
+    .heroContainerOptions {
+        margin-top: 0px;
+        position: relative;
+        z-index: 100;
+        max-height: 330px !important;
+        height: 100%;
+        height: 330px;
+        .heroOptions {
+            flex-direction: column;
+            display: flex;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            min-height: 330px;
+            .heroOption {
+                height: 100px;
+                width: 100%;
+                min-width: 280px;
+                max-width: 350px;
+                padding: 0px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                margin: 5px auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .heroCustomCaption {
+        h4 {
+            margin-top: 15%;
+        }
+        :nth-child(3) {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .heroCustomCaption {
+        z-index: -1;
+        h4 {
+            margin-top: 20%;
+            p {
+                font-size: 70px !important;
+                em {
+                    font-size: 30px !important;
+                }
+                strong {
+                    font-size: 15px !important;
+                }
+            }
+        }
+        :nth-child(2) {
+            font-size: 25px !important;
+        }
+        :nth-child(3) {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .heroCustomCaption {
+        z-index: -1;
+        max-width: 75% !important;
+        h4 {
+            margin-top: 20%;
+            p {
+                font-size: 60px !important;
+                em {
+                    font-size: 30px !important;
+                }
+                strong {
+                    font-size: 25px !important;
+                }
+            }
+        }
+        :nth-child(2) {
+            font-size: 20px !important;
+        }
+        :nth-child(3) {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    .heroCustomCaption {
+        z-index: -1;
+        max-width: 75% !important;
+        h4 {
+            margin-top: 20%;
+            p {
+                font-size: 60px !important;
+                em {
+                    font-size: 30px !important;
+                }
+                strong {
+                    font-size: 25px !important;
+                }
+            }
+        }
+        :nth-child(2) {
+            font-size: 20px !important;
+        }
+        :nth-child(3) {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .heroCustomCaption {
+        z-index: -1;
+        h4 {
+            margin: 0;
+            p {
+                font-size: 150px !important;
+                em {
+                    font-size: 90px !important;
+                }
+                strong {
+                    font-size: 80px !important;
+                }
+            }
+        }
+        :nth-child(2) {
+            font-size: 50px !important;
+        }
+        :nth-child(3) {
+            display: flex;
+        }
+    }
+}
