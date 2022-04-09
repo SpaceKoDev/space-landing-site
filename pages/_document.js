@@ -13,9 +13,8 @@ export default class MyDocument extends Document {
         return (
             <Html style={{ height: '100%', width: '100%' }}>
                 <Head>
-                    <title>{web_title}</title>
                     <style>{`
-            #__next { height: 100%,width:'100%' }
+            #__next { height: 100%;width:100%; }
           `}
                     </style>
                     {this.props.styleTags}
